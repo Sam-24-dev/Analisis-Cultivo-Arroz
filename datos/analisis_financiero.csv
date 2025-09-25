@@ -1,0 +1,5 @@
+tipo,total_tareas,tareas_completadas,inversion_total,costo_promedio_por_tarea,desviacion_presupuestaria_pct,desviacion_estandar_costos,pct_tareas_sobre_presupuesto,horas_promedio_por_tarea,costo_por_hora,ingresos_generados,roi_porcentaje
+sembrado,4,3,438.50,146.17,-0.90,1.31,0.0,8.0,18.27,0.00,0.00
+cosecha,1,1,285.00,285.00,-5.00,0,0.0,60.0,4.75,926.25,225.00
+aplicacion,3,2,160.50,80.25,0.31,0.25,0.0,4.0,20.06,0.00,0.00
+riego,3,2,97.00,48.50,-6.13,1,0.0,6.0,8.08,0.00,0.00

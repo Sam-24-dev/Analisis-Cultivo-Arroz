@@ -1,0 +1,7 @@
+area_nombre,ubicacion_nombre,hectareas,tipo_suelo,total_tareas,tareas_completadas,inversion_total,ingresos_totales,ganancia_neta,roi_porcentaje,torvadas_totales,rendimiento_promedio_por_hectarea,ranking_productividad,ranking_rentabilidad,indice_productividad_vs_promedio
+Campo Sur,"Lote B2",4.20,Franco,1,1,285.00,926.25,641.25,225.00,28.50,0.00,1,1,
+Campo Norte,"Lote A3",5.50,Arcilloso,1,1,85.50,0.00,-85.50,-100.00,0.00,,2,2,
+Campo Sur,"Lote B1",4.20,Franco,2,2,97.00,0.00,-97.00,-100.00,0.00,,2,3,
+Campo Este,"Lote C1",3.80,Limoso,3,1,135.00,0.00,-135.00,-100.00,0.00,,2,4,
+Campo Norte,"Lote A2",5.50,Arcilloso,1,1,158.00,0.00,-158.00,-100.00,0.00,,2,5,
+Campo Norte,"Lote A1",5.50,Arcilloso,3,2,220.50,0.00,-220.50,-100.00,0.00,,2,6,

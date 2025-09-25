@@ -1,0 +1,11 @@
+año,mes,nombre_mes,tipo_actividad,tareas_iniciadas,tareas_completadas,porcentaje_completadas,costo_promedio,duracion_promedio_horas,metrica_tecnica_promedio,tareas_mes_anterior,variacion_pct_mes_anterior
+2024,7,July,riego,1,0,0.0,,,18000,1,-100.00
+2024,6,June,sembrado,1,0,0.0,,,120.00,1,-100.00
+2024,6,June,aplicacion,1,0,0.0,,,,,1,-100.00
+2024,5,May,cosecha,1,1,100.0,285.00,60.0,28.50,,-
+2024,4,April,riego,1,1,100.0,55.00,6.0,18000,1,0.00
+2024,3,March,sembrado,1,1,100.0,135.00,8.0,115.00,2,-50.00
+2024,3,March,aplicacion,1,1,100.0,85.50,4.0,12.50,1,0.00
+2024,2,February,aplicacion,1,1,100.0,75.00,4.0,45.50,,-
+2024,2,February,riego,1,1,100.0,42.00,6.0,15000,,-
+2024,1,January,sembrado,2,2,100.0,151.75,8.0,130.25,,-
