@@ -79,15 +79,15 @@ jupyter nbconvert --to html analisis_cultivos_arroz_profesional.ipynb
 
 ---
 
-### 🎯 **HALLAZGOS CRÍTICOS**
+###  **HALLAZGOS CRÍTICOS**
 
-#### **🚨 SITUACIÓN ACTUAL:**
-- ❌ **ROI General**: -5.58% (Pérdida $54.75)
-- ⚠️ **Eficiencia**: 72.7% (Meta: 90%)
-- 📊 **Productividad**: 28.5 torvadas (Meta: 50)
-- ✅ **Calidad**: 100% primera clase
+#### ** SITUACIÓN ACTUAL:**
+-  **ROI General**: -5.58% (Pérdida $54.75)
+-  **Eficiencia**: 72.7% (Meta: 90%)
+-  **Productividad**: 28.5 torvadas (Meta: 50)
+-  **Calidad**: 100% primera clase
 
-#### **🏆 TOP INSIGHTS:**
+#### ** TOP INSIGHTS:**
 1. **Charlie López**: 100% eficiencia (Top performer)
 2. **Campo Sur**: 225% ROI (Área más rentable)
 3. **Cosecha**: Única actividad generadora ingresos
@@ -95,26 +95,26 @@ jupyter nbconvert --to html analisis_cultivos_arroz_profesional.ipynb
 
 ---
 
-### 💡 **PLAN ESTRATÉGICO**
+###  **PLAN ESTRATÉGICO**
 
-#### **📅 FASE 1 (0-30 días): ESTABILIZACIÓN**
+#### ** FASE 1 (0-30 días): ESTABILIZACIÓN**
 - Promover Charlie López a Supervisor
 - Reactivar empleado Ana Torres  
 - Completar tareas pendientes
 
-#### **📅 FASE 2 (1-6 meses): OPTIMIZACIÓN** 
+#### ** FASE 2 (1-6 meses): OPTIMIZACIÓN** 
 - Expandir Campo Sur (área más rentable)
 - Reducir costos proceso COSECHA
 - Implementar mejores prácticas
 
-#### **📅 FASE 3 (6-12 meses): ESCALAMIENTO**
+#### ** FASE 3 (6-12 meses): ESCALAMIENTO**
 - Replicar modelo exitoso otras áreas
 - Aumentar productividad a 50 torvadas
 - Alcanzar 90% eficiencia operacional
 
 ---
 
-### 📈 **PROYECCIONES 2025**
+###  **PROYECCIONES 2025**
 
 | **Métrica** | **Actual 2024** | **Meta 2025** | **Mejora** |
 |-------------|-----------------|---------------|------------|
@@ -124,7 +124,7 @@ jupyter nbconvert --to html analisis_cultivos_arroz_profesional.ipynb
 | Áreas Rentables | 1/6 | 4/6 | +200% |
 | Empleados 100% | 4/6 | 6/6 | +33% |
 
-#### **💰 ROI PLAN ESTRATÉGICO:**
+#### ** ROI PLAN ESTRATÉGICO:**
 - **Inversión**: $2,000
 - **Retorno Año 1**: $3,500  
 - **ROI**: 75% primer año
@@ -132,9 +132,9 @@ jupyter nbconvert --to html analisis_cultivos_arroz_profesional.ipynb
 
 ---
 
-### 🛠️ **STACK TECNOLÓGICO**
+###  **STACK TECNOLÓGICO**
 
-#### **📊 DATA ANALYTICS:**
+#### ** DATA ANALYTICS:**
 ```python
 - Python 3.8+
 - Pandas + NumPy (Procesamiento datos)
@@ -143,7 +143,7 @@ jupyter nbconvert --to html analisis_cultivos_arroz_profesional.ipynb
 - Jupyter Notebook (Análisis profesional)
 ```
 
-#### **🎨 VISUALIZACIONES:**
+#### ** VISUALIZACIONES:**
 - **Gauges** para KPIs críticos
 - **Heatmaps** para análisis territorial
 - **Time series** para tendencias temporales
@@ -151,7 +151,7 @@ jupyter nbconvert --to html analisis_cultivos_arroz_profesional.ipynb
 - **Bar charts** comparativos
 - **Pie charts** para distribuciones
 
-#### **📈 METODOLOGÍA:**
+#### ** METODOLOGÍA:**
 - Análisis exploratorio de datos (EDA)
 - Business Intelligence dashboard
 - Statistical analysis
@@ -160,7 +160,7 @@ jupyter nbconvert --to html analisis_cultivos_arroz_profesional.ipynb
 - ROI quantification
 
 
-#### **📧 DEMOSTRACIÓN DISPONIBLE:**
+#### ** DEMOSTRACIÓN DISPONIBLE:**
 - Notebook interactivo completo
 - HTML para presentación web
 - Datasets reales incluidos  
@@ -169,6 +169,6 @@ jupyter nbconvert --to html analisis_cultivos_arroz_profesional.ipynb
 
 ---
 
-## 🌟 **CONCLUSIÓN**
+##  **CONCLUSIÓN**
 
 **Este análisis representa la demostración completa de capacidades profesionales en Data Analytics, Business Intelligence y consultoría estratégica, aplicadas a un caso real del sector agrícola con datos verificables y resultados cuantificados.**
