@@ -1,18 +1,18 @@
-# 🌾 ANÁLISIS DEL  SISTEMA CULTIVO ARROZ
+#  ANÁLISIS DEL  SISTEMA CULTIVO ARROZ
 
 ---
 
-### 🎯 DESCRIPCIÓN EJECUTIVA
+###  DESCRIPCIÓN EJECUTIVA
 
 Este proyecto presenta un **Análisis completo y profesional** de un sistema de cultivo de arroz basado en **datos reales de MySQL**, desarrollado como demostración de capacidades avanzadas en **Data Analytics** y **Business Intelligence**.
 
-**📈 Resultado:** Transformación de ROI de -5.58% → +15% mediante plan estratégico cuantificado.
+** Resultado:** Transformación de ROI de -5.58% → +15% mediante plan estratégico cuantificado.
 
 ---
 
-### 🏆 **CARACTERÍSTICAS DESTACADAS**
+###  **CARACTERÍSTICAS DESTACADAS**
 
-#### 📊 **ANÁLISIS MULTIDIMENSIONAL:**
+####  **ANÁLISIS MULTIDIMENSIONAL:**
 - **Financiero**: ROI, costos, rentabilidad por actividad
 - **Operacional**: Eficiencia, productividad, control de tareas  
 - **Recursos Humanos**: Performance empleados, especialización
@@ -20,7 +20,7 @@ Este proyecto presenta un **Análisis completo y profesional** de un sistema de 
 - **Temporal**: Estacionalidad, tendencias, patrones mensuales
 - **Estratégico**: Proyecciones, escenarios, plan de acción
 
-#### 🎨 **VISUALIZACIONES PROFESIONALES:**
+####  **VISUALIZACIONES PROFESIONALES:**
 - **15+ Gráficos interactivos** (Plotly)
 - **Dashboard ejecutivo** con KPIs críticos
 - **Heatmaps** multidimensionales
@@ -28,7 +28,7 @@ Este proyecto presenta un **Análisis completo y profesional** de un sistema de 
 - **Gauges** y medidores de performance
 - **Tablas dinámicas** con recomendaciones
 
-#### 💡 **INSIGHTS ACCIONABLES:**
+####  **INSIGHTS ACCIONABLES:**
 - **4 Alertas críticas** identificadas
 - **Plan de acción** 3 horizontes temporales
 - **ROI proyectado** +20.6 puntos de mejora
@@ -36,7 +36,7 @@ Este proyecto presenta un **Análisis completo y profesional** de un sistema de 
 
 
 
-### 🚀 **EJECUCIÓN DEL ANÁLISIS**
+###  **EJECUCIÓN DEL ANÁLISIS**
 
 #### **Opción 1: Ejecución Automática**
 ```bash
@@ -59,9 +59,9 @@ jupyter nbconvert --to html analisis_cultivos_arroz_profesional.ipynb
 
 ---
 
-### 📊 **DATOS ANALIZADOS**
+###  **DATOS ANALIZADOS**
 
-#### **🔢 MÉTRICAS CLAVE:**
+#### ** MÉTRICAS CLAVE:**
 - **12 registros** de datos reales MySQL
 - **6 empleados** analizados
 - **6 áreas productivas** (28.4 hectáreas)
@@ -69,7 +69,7 @@ jupyter nbconvert --to html analisis_cultivos_arroz_profesional.ipynb
 - **7 meses** de operación (Enero-Julio 2024)
 - **$981** inversión total analizada
 
-#### **📈 DATASETS INCLUIDOS:**
+#### ** DATASETS INCLUIDOS:**
 1. **Análisis Financiero**: ROI, costos, desviaciones
 2. **KPIs Consolidados**: Finanzas, operaciones, productividad
 3. **Productividad Empleados**: Ranking eficiencia, especialización
