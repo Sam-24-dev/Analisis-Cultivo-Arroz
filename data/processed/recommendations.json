@@ -1,0 +1,20 @@
+[
+  {
+    "category": "MEJOR EMPLEADO",
+    "value": "Charlie López (Aplicacion)",
+    "metric": "Eficiencia: 100.0%",
+    "recommendation": "Considerar para ascenso a supervisor o líder de equipo"
+  },
+  {
+    "category": "ÁREA MÁS RENTABLE",
+    "value": "Campo Sur",
+    "metric": "ROI: 142.5%",
+    "recommendation": "Expandir operaciones y replicar mejores prácticas"
+  },
+  {
+    "category": "ACTIVIDAD MÁS COSTOSA",
+    "value": "COSECHA",
+    "metric": "Promedio: $285.00",
+    "recommendation": "Revisar procesos y buscar optimizaciones de costo"
+  }
+]

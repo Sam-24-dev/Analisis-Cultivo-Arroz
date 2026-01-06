@@ -1,0 +1,112 @@
+[
+  {
+    "year": 2024,
+    "month": 7,
+    "month_name": "July",
+    "activity_type": "Irrigation",
+    "tasks_started": 1,
+    "tasks_completed": 0,
+    "completion_rate": 0.0,
+    "avg_cost": 0,
+    "avg_duration_hours": 0
+  },
+  {
+    "year": 2024,
+    "month": 6,
+    "month_name": "June",
+    "activity_type": "Planting",
+    "tasks_started": 1,
+    "tasks_completed": 0,
+    "completion_rate": 0.0,
+    "avg_cost": 0,
+    "avg_duration_hours": 0
+  },
+  {
+    "year": 2024,
+    "month": 6,
+    "month_name": "June",
+    "activity_type": "Application",
+    "tasks_started": 1,
+    "tasks_completed": 0,
+    "completion_rate": 0.0,
+    "avg_cost": 0,
+    "avg_duration_hours": 0
+  },
+  {
+    "year": 2024,
+    "month": 5,
+    "month_name": "May",
+    "activity_type": "Harvest",
+    "tasks_started": 1,
+    "tasks_completed": 1,
+    "completion_rate": 100.0,
+    "avg_cost": 285.0,
+    "avg_duration_hours": 60.0
+  },
+  {
+    "year": 2024,
+    "month": 4,
+    "month_name": "April",
+    "activity_type": "Irrigation",
+    "tasks_started": 1,
+    "tasks_completed": 1,
+    "completion_rate": 100.0,
+    "avg_cost": 55.0,
+    "avg_duration_hours": 6.0
+  },
+  {
+    "year": 2024,
+    "month": 3,
+    "month_name": "March",
+    "activity_type": "Planting",
+    "tasks_started": 1,
+    "tasks_completed": 1,
+    "completion_rate": 100.0,
+    "avg_cost": 135.0,
+    "avg_duration_hours": 8.0
+  },
+  {
+    "year": 2024,
+    "month": 3,
+    "month_name": "March",
+    "activity_type": "Application",
+    "tasks_started": 1,
+    "tasks_completed": 1,
+    "completion_rate": 100.0,
+    "avg_cost": 85.5,
+    "avg_duration_hours": 4.0
+  },
+  {
+    "year": 2024,
+    "month": 2,
+    "month_name": "February",
+    "activity_type": "Application",
+    "tasks_started": 1,
+    "tasks_completed": 1,
+    "completion_rate": 100.0,
+    "avg_cost": 75.0,
+    "avg_duration_hours": 4.0
+  },
+  {
+    "year": 2024,
+    "month": 2,
+    "month_name": "February",
+    "activity_type": "Irrigation",
+    "tasks_started": 1,
+    "tasks_completed": 1,
+    "completion_rate": 100.0,
+    "avg_cost": 42.0,
+    "avg_duration_hours": 6.0
+  },
+  {
+    "year": 2024,
+    "month": 1,
+    "month_name": "January",
+    "activity_type": "Planting",
+    "tasks_started": 2,
+    "tasks_completed": 2,
+    "completion_rate": 100.0,
+    "avg_cost": 151.75,
+    "avg_duration_hours": 8.0
+  }
+]

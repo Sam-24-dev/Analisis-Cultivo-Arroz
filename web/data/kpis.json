@@ -1,0 +1,28 @@
+{
+  "finance": {
+    "total_investment": 981.0,
+    "avg_task_cost": 122.63,
+    "harvest_revenue": 926.25,
+    "net_profit": -54.75,
+    "overall_roi_pct": -5.58,
+    "investment_per_hectare": 25.55
+  },
+  "operations": {
+    "active_employees": 6,
+    "specialized_employees": 5,
+    "productive_areas": 4,
+    "active_locations": 7,
+    "total_tasks": 11,
+    "tasks_completed": 8,
+    "completion_rate_pct": 72.7
+  },
+  "productivity": {
+    "total_torvadas": 28.5,
+    "total_kg_produced": 5169.9,
+    "avg_yield_per_hectare": 0.0,
+    "harvests_completed": 1,
+    "avg_humidity": 14.2,
+    "first_quality_harvests": 1,
+    "first_quality_pct": 100.0
+  }
+}
