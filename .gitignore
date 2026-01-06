@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.env
+venv/
+.venv/
+env/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Editor
+.vscode/
+.idea/
+
+# Data (Optional - usually we might ignore large data, but keeping raw for portfolio)
+# data/processed/
