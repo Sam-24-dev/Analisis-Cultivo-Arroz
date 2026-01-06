@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strategic Insights - Rice Crop Analytics</title>
+    <meta name="description" content="AI-powered insights and recommendations for optimizing rice crop operations.">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="fas fa-seedling me-2"></i>
+                Rice Crop Analytics
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">
+                            <i class="fas fa-home me-1"></i>Dashboard
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="employees.html">
+                            <i class="fas fa-users me-1"></i>Employees
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="financial.html">
+                            <i class="fas fa-chart-line me-1"></i>Financial
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="areas.html">
+                            <i class="fas fa-map-marked-alt me-1"></i>Areas
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="insights.html">
+                            <i class="fas fa-lightbulb me-1"></i>Insights
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container mt-4">
+        <div class="row mb-4">
+            <div class="col-12">
+                <h1 class="text-success">
+                    <i class="fas fa-lightbulb me-2"></i>Strategic Insights
+                </h1>
+                <p class="text-muted">AI-powered analysis and recommendations for operational optimization</p>
+            </div>
+        </div>
+
+        <!-- Key Recommendations -->
+        <div class="row g-4 mb-4">
+            <div class="col-lg-4">
+                <div class="card h-100 border-0 shadow-sm recommendation-card best-employee">
+                    <div class="card-body text-center py-4">
+                        <div class="recommendation-icon bg-warning-subtle mb-3">
+                            <i class="fas fa-user-tie fa-lg"></i>
+                        </div>
+                        <h5 class="card-title" style="color: #b45309;">Top Employee</h5>
+                        <h4 class="text-dark">Charlie López</h4>
+                        <p class="text-muted small">Specialty: Application</p>
+                        <div class="mb-3">
+                            <span class="badge bg-success">100% Efficiency</span>
+                        </div>
+                        <p class="small text-muted">Consider for promotion to supervisor or team leader</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="card h-100 border-0 shadow-sm recommendation-card best-area">
+                    <div class="card-body text-center py-4">
+                        <div class="recommendation-icon bg-success-subtle mb-3">
+                            <i class="fas fa-map-marked-alt fa-lg"></i>
+                        </div>
+                        <h5 class="card-title text-success">Most Profitable Area</h5>
+                        <h4 class="text-dark">Campo Sur</h4>
+                        <p class="text-muted small">Lot B2 - 4.2 hectares</p>
+                        <div class="mb-3">
+                            <span class="badge bg-success">ROI: 225%</span>
+                        </div>
+                        <p class="small text-muted">Expand operations and replicate best practices</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="card h-100 border-0 shadow-sm recommendation-card cost-alert">
+                    <div class="card-body text-center py-4">
+                        <div class="recommendation-icon bg-danger-subtle mb-3">
+                            <i class="fas fa-exclamation-triangle fa-lg"></i>
+                        </div>
+                        <h5 class="card-title text-danger">Highest Cost Activity</h5>
+                        <h4 class="text-dark">Harvest</h4>
+                        <p class="text-muted small">Average: $285.00</p>
+                        <div class="mb-3">
+                            <span class="badge bg-danger">High Cost</span>
+                        </div>
+                        <p class="small text-muted">Review processes and seek cost optimizations</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Performance Trends -->
+        <div class="row g-4 mb-4">
+            <div class="col-lg-8">
+                <div class="card border-0 shadow-sm">
+                    <div class="card-header bg-white border-bottom">
+                        <h5 class="card-title mb-0">
+                            <i class="fas fa-chart-line me-2 text-primary"></i>
+                            Performance Trends
+                        </h5>
+                    </div>
+                    <div class="card-body">
+                        <div style="position: relative; height: 300px;">
+                            <canvas id="trendsChart"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="card border-0 shadow-sm">
+                    <div class="card-header bg-white border-bottom">
+                        <h5 class="card-title mb-0">
+                            <i class="fas fa-calendar-alt me-2 text-info"></i>
+                            Seasonal Analysis
+                        </h5>
+                    </div>
+                    <div class="card-body">
+                        <div class="season-analysis mb-3">
+                            <h6 class="text-success">
+                                <i class="fas fa-seedling me-1"></i>Optimal Season
+                            </h6>
+                            <p class="small text-muted">Jan-Mar: Best planting period</p>
+                            <div class="progress mb-2">
+                                <div class="progress-bar bg-success" style="width: 85%"></div>
+                            </div>
+                            <small>85% success rate</small>
+                        </div>
+
+                        <div class="season-analysis mb-3">
+                            <h6 style="color: #b45309;">
+                                <i class="fas fa-tint me-1"></i>Critical Irrigation
+                            </h6>
+                            <p class="small text-muted">Apr-Jun: High water demand</p>
+                            <div class="progress mb-2">
+                                <div class="progress-bar bg-warning" style="width: 70%"></div>
+                            </div>
+                            <small>70% avg efficiency</small>
+                        </div>
+
+                        <div class="season-analysis">
+                            <h6 class="text-info">
+                                <i class="fas fa-cut me-1"></i>Main Harvest
+                            </h6>
+                            <p class="small text-muted">May: Peak harvest season</p>
+                            <div class="progress mb-2">
+                                <div class="progress-bar bg-info" style="width: 95%"></div>
+                            </div>
+                            <small>95% utilization</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Actionable Insights -->
+        <div class="row g-4 mb-4">
+            <div class="col-12">
+                <div class="card border-0 shadow-sm">
+                    <div class="card-header bg-white border-bottom">
+                        <h5 class="card-title mb-0">
+                            <i class="fas fa-brain me-2 text-info"></i>
+                            AI Strategic Recommendations
+                        </h5>
+                    </div>
+                    <div class="card-body">
+                        <div class="row g-4">
+                            <div class="col-lg-6">
+                                <div class="insight-card h-100">
+                                    <h6 class="text-success">
+                                        <i class="fas fa-arrow-up me-2"></i>
+                                        Personnel Optimization
+                                    </h6>
+                                    <ul class="list-unstyled">
+                                        <li><i class="fas fa-check text-success me-2"></i>Promote Charlie López to
+                                            supervisor</li>
+                                        <li><i class="fas fa-check text-success me-2"></i>Train employees in application
+                                            specialty</li>
+                                        <li><i class="fas fa-check text-success me-2"></i>Redistribute tasks based on
+                                            efficiency</li>
+                                        <li><i class="fas fa-exclamation text-warning me-2"></i>Review Ana Torres
+                                            performance</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-6">
+                                <div class="insight-card h-100">
+                                    <h6 style="color: var(--secondary);">
+                                        <i class="fas fa-dollar-sign me-2"></i>
+                                        Financial Optimization
+                                    </h6>
+                                    <ul class="list-unstyled">
+                                        <li><i class="fas fa-check text-success me-2"></i>Expand operations in Campo Sur
+                                        </li>
+                                        <li><i class="fas fa-check text-success me-2"></i>Reduce harvest costs (current:
+                                            $285)</li>
+                                        <li><i class="fas fa-exclamation text-warning me-2"></i>Review negative overall
+                                            ROI (-5.58%)</li>
+                                        <li><i class="fas fa-info text-info me-2"></i>Improve efficiency in clay soils
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-6">
+                                <div class="insight-card h-100">
+                                    <h6 style="color: #b45309;">
+                                        <i class="fas fa-map me-2"></i>
+                                        Area Management
+                                    </h6>
+                                    <ul class="list-unstyled">
+                                        <li><i class="fas fa-star text-warning me-2"></i>Replicate Campo Sur best
+                                            practices</li>
+                                        <li><i class="fas fa-tools text-info me-2"></i>Improve drainage in clay soils
+                                        </li>
+                                        <li><i class="fas fa-seedling text-success me-2"></i>Prioritize loam soils for
+                                            expansion</li>
+                                        <li><i class="fas fa-chart-line text-primary me-2"></i>Monitor areas with -100%
+                                            ROI</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-6">
+                                <div class="insight-card h-100">
+                                    <h6 class="text-danger">
+                                        <i class="fas fa-exclamation-triangle me-2"></i>
+                                        Critical Alerts
+                                    </h6>
+                                    <ul class="list-unstyled">
+                                        <li><i class="fas fa-times text-danger me-2"></i>Negative overall ROI requires
+                                            immediate action</li>
+                                        <li><i class="fas fa-clock text-warning me-2"></i>3 pending tasks need attention
+                                        </li>
+                                        <li><i class="fas fa-user-times text-info me-2"></i>Ana Torres has no completed
+                                            tasks</li>
+                                        <li><i class="fas fa-water text-primary me-2"></i>Review irrigation efficiency
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Predictions -->
+        <div class="row g-4">
+            <div class="col-lg-6">
+                <div class="card border-0 shadow-sm">
+                    <div class="card-header bg-white border-bottom">
+                        <h5 class="card-title mb-0">
+                            <i class="fas fa-chart-line me-2 text-info"></i>
+                            Next Season Predictions
+                        </h5>
+                    </div>
+                    <div class="card-body">
+                        <div class="prediction mb-3">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span>Expected Yield</span>
+                                <span class="badge bg-success">+15%</span>
+                            </div>
+                            <div class="progress mt-2">
+                                <div class="progress-bar bg-success" style="width: 75%"></div>
+                            </div>
+                            <small class="text-muted">Based on implemented improvements</small>
+                        </div>
+
+                        <div class="prediction mb-3">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span>Cost Reduction</span>
+                                <span class="badge bg-primary">-8%</span>
+                            </div>
+                            <div class="progress mt-2">
+                                <div class="progress-bar bg-primary" style="width: 60%"></div>
+                            </div>
+                            <small class="text-muted">Optimizing harvest processes</small>
+                        </div>
+
+                        <div class="prediction mb-3">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span>Projected ROI</span>
+                                <span class="badge bg-warning">+12%</span>
+                            </div>
+                            <div class="progress mt-2">
+                                <div class="progress-bar bg-warning" style="width: 70%"></div>
+                            </div>
+                            <small class="text-muted">With applied recommendations</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-6">
+                <div class="card border-0 shadow-sm">
+                    <div class="card-header bg-white border-bottom">
+                        <h5 class="card-title mb-0">
+                            <i class="fas fa-tasks me-2 text-success"></i>
+                            Immediate Action Plan
+                        </h5>
+                    </div>
+                    <div class="card-body">
+                        <div class="action-item mb-3">
+                            <div class="action-priority bg-danger text-white">1</div>
+                            <div>
+                                <h6 class="mb-1">Review Harvest Costs</h6>
+                                <p class="small text-muted mb-0">Analyze harvest process averaging $285 per task</p>
+                            </div>
+                        </div>
+
+                        <div class="action-item mb-3">
+                            <div class="action-priority bg-warning text-white">2</div>
+                            <div>
+                                <h6 class="mb-1">Expand Campo Sur</h6>
+                                <p class="small text-muted mb-0">Most profitable area (225% ROI) needs expansion</p>
+                            </div>
+                        </div>
+
+                        <div class="action-item mb-3">
+                            <div class="action-priority bg-success text-white">3</div>
+                            <div>
+                                <h6 class="mb-1">Train Staff</h6>
+                                <p class="small text-muted mb-0">Improve specialization in foliar application</p>
+                            </div>
+                        </div>
+
+                        <div class="action-item">
+                            <div class="action-priority bg-info text-white">4</div>
+                            <div>
+                                <h6 class="mb-1">Optimize Irrigation</h6>
+                                <p class="small text-muted mb-0">Improve irrigation system efficiency</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Author Footer -->
+    <footer class="footer-author">
+        <div class="container">
+            <div class="author-content">
+                <div class="author-avatar">
+                    <i class="fas fa-user-tie"></i>
+                </div>
+                <div class="author-info">
+                    <h3>Samir Caizapasto</h3>
+                    <span class="author-role">Junior Data Engineer & Analyst</span>
+                    <div class="author-institution">
+                        <i class="fas fa-university me-2"></i>Escuela Superior Politécnica del Litoral
+                    </div>
+                    <p class="author-desc">
+                        Building automated data pipelines and transforming raw data into actionable insights.
+                    </p>
+                    <div class="author-links">
+                        <a href="https://linkedin.com/in/samir-caizapasto" target="_blank" class="btn-social">
+                            <i class="fab fa-linkedin"></i> LinkedIn
+                        </a>
+                        <a href="https://github.com/Sam-24-dev/Analisis-Cultivo-Arroz" target="_blank"
+                            class="btn-social">
+                            <i class="fab fa-github"></i> Repository
+                        </a>
+                        <a href="https://portafolio-samir-tau.vercel.app/" target="_blank" class="btn-social">
+                            <i class="fas fa-briefcase"></i> Portfolio
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-5 pt-4" style="border-top: 1px solid rgba(255,255,255,0.1);">
+                <p class="text-muted small mb-0">&copy; 2024 Rice Crop Analytics. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/insights.js"></script>
+</body>
+
+</html>

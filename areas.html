@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Area Performance - Rice Crop Analytics</title>
+    <meta name="description"
+        content="Geographic area productivity and profitability analysis for rice crop management.">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="fas fa-seedling me-2"></i>
+                Rice Crop Analytics
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">
+                            <i class="fas fa-home me-1"></i>Dashboard
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="employees.html">
+                            <i class="fas fa-users me-1"></i>Employees
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="financial.html">
+                            <i class="fas fa-chart-line me-1"></i>Financial
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="areas.html">
+                            <i class="fas fa-map-marked-alt me-1"></i>Areas
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="insights.html">
+                            <i class="fas fa-lightbulb me-1"></i>Insights
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container mt-4">
+        <div class="row mb-4">
+            <div class="col-12">
+                <h1 class="text-success">
+                    <i class="fas fa-map-marked-alt me-2"></i>Area Performance
+                </h1>
+                <p class="text-muted">Productivity and profitability analysis by geographic area</p>
+            </div>
+        </div>
+
+        <!-- Area Summary Cards -->
+        <div class="row g-4 mb-4">
+            <div class="col-lg-3 col-md-6">
+                <div class="card kpi-card h-100 border-0 shadow-sm">
+                    <div class="card-body text-center py-4">
+                        <div class="kpi-icon bg-success-subtle mb-3">
+                            <i class="fas fa-map fa-lg"></i>
+                        </div>
+                        <h3 class="kpi-number">4</h3>
+                        <p class="kpi-label mb-2">Productive Areas</p>
+                        <small class="text-muted">7 active locations</small>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+                <div class="card kpi-card h-100 border-0 shadow-sm">
+                    <div class="card-body text-center py-4">
+                        <div class="kpi-icon bg-primary-subtle mb-3">
+                            <i class="fas fa-ruler-combined fa-lg"></i>
+                        </div>
+                        <h3 class="kpi-number">28.7</h3>
+                        <p class="kpi-label mb-2">Total Hectares</p>
+                        <small class="text-muted">Average: 4.78 ha/area</small>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+                <div class="card kpi-card h-100 border-0 shadow-sm">
+                    <div class="card-body text-center py-4">
+                        <div class="kpi-icon bg-warning-subtle mb-3">
+                            <i class="fas fa-trophy fa-lg"></i>
+                        </div>
+                        <h3 class="kpi-number">225%</h3>
+                        <p class="kpi-label mb-2">Best ROI</p>
+                        <small class="text-muted">Campo Sur - Lote B2</small>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+                <div class="card kpi-card h-100 border-0 shadow-sm">
+                    <div class="card-body text-center py-4">
+                        <div class="kpi-icon bg-primary-subtle mb-3">
+                            <i class="fas fa-weight-hanging fa-lg"></i>
+                        </div>
+                        <h3 class="kpi-number">28.5</h3>
+                        <p class="kpi-label mb-2">Total Harvested</p>
+                        <small class="text-muted">From Campo Sur</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Chart - Performance vs Investment -->
+        <div class="row g-4 mb-4">
+            <div class="col-12">
+                <div class="card border-0 shadow-sm">
+                    <div class="card-header bg-white border-bottom">
+                        <h5 class="card-title mb-0">
+                            <i class="fas fa-chart-scatter me-2 text-success"></i>
+                            Performance vs Investment by Area
+                        </h5>
+                    </div>
+                    <div class="card-body">
+                        <div style="position: relative; height: 350px;">
+                            <canvas id="scatterChart"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Areas Table -->
+        <div class="row">
+            <div class="col-12">
+                <div class="card border-0 shadow-sm">
+                    <div class="card-header bg-white border-bottom d-flex justify-content-between align-items-center">
+                        <h5 class="card-title mb-0">
+                            <i class="fas fa-table me-2 text-primary"></i>
+                            Detailed Analysis by Area
+                        </h5>
+                        <div>
+                            <button class="btn btn-outline-success btn-sm me-2" onclick="filterByROI('positive')">
+                                <i class="fas fa-arrow-up me-1"></i>Positive ROI
+                            </button>
+                            <button class="btn btn-outline-danger btn-sm me-2" onclick="filterByROI('negative')">
+                                <i class="fas fa-arrow-down me-1"></i>Negative ROI
+                            </button>
+                            <button class="btn btn-outline-primary btn-sm" onclick="exportAreasData()">
+                                <i class="fas fa-download me-1"></i>Export
+                            </button>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div class="table-responsive">
+                            <table class="table table-hover" id="areasTable">
+                                <thead>
+                                    <tr>
+                                        <th>Ranking</th>
+                                        <th>Area</th>
+                                        <th>Location</th>
+                                        <th>Hectares</th>
+                                        <th>Soil Type</th>
+                                        <th>Tasks</th>
+                                        <th>Investment</th>
+                                        <th>Revenue</th>
+                                        <th>ROI %</th>
+                                        <th>Harvested</th>
+                                        <th>Status</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="areasTableBody">
+                                    <!-- Data will be populated by JavaScript -->
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Author Footer -->
+    <footer class="footer-author">
+        <div class="container">
+            <div class="author-content">
+                <div class="author-avatar">
+                    <i class="fas fa-user-tie"></i>
+                </div>
+                <div class="author-info">
+                    <h3>Samir Caizapasto</h3>
+                    <span class="author-role">Junior Data Engineer & Analyst</span>
+                    <div class="author-institution">
+                        <i class="fas fa-university me-2"></i>Escuela Superior Politécnica del Litoral
+                    </div>
+                    <p class="author-desc">
+                        Building automated data pipelines and transforming raw data into actionable insights.
+                    </p>
+                    <div class="author-links">
+                        <a href="https://linkedin.com/in/samir-caizapasto" target="_blank" class="btn-social">
+                            <i class="fab fa-linkedin"></i> LinkedIn
+                        </a>
+                        <a href="https://github.com/Sam-24-dev/Analisis-Cultivo-Arroz" target="_blank"
+                            class="btn-social">
+                            <i class="fab fa-github"></i> Repository
+                        </a>
+                        <a href="https://portafolio-samir-tau.vercel.app/" target="_blank" class="btn-social">
+                            <i class="fas fa-briefcase"></i> Portfolio
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-5 pt-4" style="border-top: 1px solid rgba(255,255,255,0.1);">
+                <p class="text-muted small mb-0">&copy; 2024 Rice Crop Analytics. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/areas.js"></script>
+</body>
+
+</html>

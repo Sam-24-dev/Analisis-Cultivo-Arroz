@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Management - Rice Crop Analytics</title>
+    <meta name="description" content="Employee productivity and performance analysis for rice crop management.">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="fas fa-seedling me-2"></i>
+                Rice Crop Analytics
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">
+                            <i class="fas fa-home me-1"></i>Dashboard
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="employees.html">
+                            <i class="fas fa-users me-1"></i>Employees
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="financial.html">
+                            <i class="fas fa-chart-line me-1"></i>Financial
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="areas.html">
+                            <i class="fas fa-map-marked-alt me-1"></i>Areas
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="insights.html">
+                            <i class="fas fa-lightbulb me-1"></i>Insights
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container mt-4">
+        <div class="row mb-4">
+            <div class="col-12">
+                <h1 class="text-success">
+                    <i class="fas fa-users me-2"></i>Employee Management
+                </h1>
+                <p class="text-muted">Productivity analysis and performance tracking</p>
+            </div>
+        </div>
+
+        <!-- Employee Chart -->
+        <div class="row mb-4">
+            <div class="col-12">
+                <div class="card border-0 shadow-sm">
+                    <div class="card-header bg-white border-bottom">
+                        <h5 class="card-title mb-0">
+                            <i class="fas fa-chart-bar me-2 text-primary"></i>
+                            ROI by Employee
+                        </h5>
+                    </div>
+                    <div class="card-body">
+                        <div style="position: relative; height: 300px;">
+                            <canvas id="empleadosChart"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Employees Table -->
+        <div class="row">
+            <div class="col-12">
+                <div class="card border-0 shadow-sm">
+                    <div class="card-header bg-white border-bottom d-flex justify-content-between align-items-center">
+                        <h5 class="card-title mb-0">
+                            <i class="fas fa-table me-2 text-success"></i>
+                            Detailed Productivity
+                        </h5>
+                        <button class="btn btn-outline-success btn-sm" onclick="exportTableToCSV()">
+                            <i class="fas fa-download me-1"></i>Export CSV
+                        </button>
+                    </div>
+                    <div class="card-body">
+                        <div class="table-responsive">
+                            <table class="table table-hover" id="empleadosTable">
+                                <thead>
+                                    <tr>
+                                        <th>Ranking</th>
+                                        <th>Employee</th>
+                                        <th>ID</th>
+                                        <th>Specialty</th>
+                                        <th>Daily Salary</th>
+                                        <th>Tasks Assigned</th>
+                                        <th>Hours Worked</th>
+                                        <th>Success Rate</th>
+                                        <th>ROI %</th>
+                                        <th>Status</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="empleadosTableBody">
+                                    <!-- Data will be populated by JavaScript -->
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Author Footer -->
+    <footer class="footer-author">
+        <div class="container">
+            <div class="author-content">
+                <div class="author-avatar">
+                    <i class="fas fa-user-tie"></i>
+                </div>
+                <div class="author-info">
+                    <h3>Samir Caizapasto</h3>
+                    <span class="author-role">Junior Data Engineer & Analyst</span>
+                    <div class="author-institution">
+                        <i class="fas fa-university me-2"></i>Escuela Superior Politécnica del Litoral
+                    </div>
+                    <p class="author-desc">
+                        Building automated data pipelines and transforming raw data into actionable insights.
+                    </p>
+                    <div class="author-links">
+                        <a href="https://linkedin.com/in/samir-caizapasto" target="_blank" class="btn-social">
+                            <i class="fab fa-linkedin"></i> LinkedIn
+                        </a>
+                        <a href="https://github.com/Sam-24-dev/Analisis-Cultivo-Arroz" target="_blank"
+                            class="btn-social">
+                            <i class="fab fa-github"></i> Repository
+                        </a>
+                        <a href="https://portafolio-samir-tau.vercel.app/" target="_blank" class="btn-social">
+                            <i class="fas fa-briefcase"></i> Portfolio
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-5 pt-4" style="border-top: 1px solid rgba(255,255,255,0.1);">
+                <p class="text-muted small mb-0">&copy; 2024 Rice Crop Analytics. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/employees.js"></script>
+</body>
+
+</html>

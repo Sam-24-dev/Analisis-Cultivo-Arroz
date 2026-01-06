@@ -1,0 +1,68 @@
+{
+  "generated_at": "2026-01-05T21:49:15.772956",
+  "summary": {
+    "total_employees": 6,
+    "total_areas": 3,
+    "overall_roi": -5.58,
+    "completion_rate": 72.7
+  },
+  "kpis": {
+    "finance": {
+      "total_investment": 981.0,
+      "avg_task_cost": 122.63,
+      "harvest_revenue": 926.25,
+      "net_profit": -54.75,
+      "overall_roi_pct": -5.58,
+      "investment_per_hectare": 25.55
+    },
+    "operations": {
+      "active_employees": 6,
+      "specialized_employees": 5,
+      "productive_areas": 4,
+      "active_locations": 7,
+      "total_tasks": 11,
+      "tasks_completed": 8,
+      "completion_rate_pct": 72.7
+    },
+    "productivity": {
+      "total_torvadas": 28.5,
+      "total_kg_produced": 5169.9,
+      "avg_yield_per_hectare": 0.0,
+      "harvests_completed": 1,
+      "avg_humidity": 14.2,
+      "first_quality_harvests": 1,
+      "first_quality_pct": 100.0
+    }
+  },
+  "top_employee": {
+    "id": "0946195734",
+    "name": "Charlie López",
+    "specialty": "Application",
+    "daily_salary": 20.0,
+    "total_tasks": 2,
+    "hours_worked": 8.0,
+    "avg_hours_per_task": 4.0,
+    "tasks_completed": 2,
+    "success_rate": 100.0,
+    "total_cost": 160.5,
+    "labor_cost": 20.0,
+    "roi_percentage": 702.5,
+    "efficiency_rank": 1
+  },
+  "best_area": {
+    "area_name": "Campo Sur",
+    "location_name": "Lote B2",
+    "hectares": 4.2,
+    "soil_type": "Loam",
+    "total_tasks": 1,
+    "tasks_completed": 1,
+    "total_investment": 285.0,
+    "total_revenue": 926.25,
+    "net_profit": 641.25,
+    "roi_percentage": 225.0,
+    "total_torvadas": 28.5,
+    "yield_per_hectare": 0.0,
+    "productivity_rank": 1,
+    "profitability_rank": 1
+  }
+}

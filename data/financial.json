@@ -1,0 +1,58 @@
+[
+  {
+    "activity_type": "Planting",
+    "total_tasks": 4,
+    "tasks_completed": 3,
+    "total_investment": 438.5,
+    "avg_cost_per_task": 146.17,
+    "budget_deviation_pct": -0.9,
+    "cost_std_dev": 1.31,
+    "over_budget_pct": 0.0,
+    "avg_hours_per_task": 8.0,
+    "cost_per_hour": 18.27,
+    "revenue_generated": 0.0,
+    "roi_percentage": 0.0
+  },
+  {
+    "activity_type": "Harvest",
+    "total_tasks": 1,
+    "tasks_completed": 1,
+    "total_investment": 285.0,
+    "avg_cost_per_task": 285.0,
+    "budget_deviation_pct": -5.0,
+    "cost_std_dev": 0,
+    "over_budget_pct": 0.0,
+    "avg_hours_per_task": 60.0,
+    "cost_per_hour": 4.75,
+    "revenue_generated": 926.25,
+    "roi_percentage": 225.0
+  },
+  {
+    "activity_type": "Application",
+    "total_tasks": 3,
+    "tasks_completed": 2,
+    "total_investment": 160.5,
+    "avg_cost_per_task": 80.25,
+    "budget_deviation_pct": 0.31,
+    "cost_std_dev": 0.25,
+    "over_budget_pct": 0.0,
+    "avg_hours_per_task": 4.0,
+    "cost_per_hour": 20.06,
+    "revenue_generated": 0.0,
+    "roi_percentage": 0.0
+  },
+  {
+    "activity_type": "Irrigation",
+    "total_tasks": 3,
+    "tasks_completed": 2,
+    "total_investment": 97.0,
+    "avg_cost_per_task": 48.5,
+    "budget_deviation_pct": -6.13,
+    "cost_std_dev": 1,
+    "over_budget_pct": 0.0,
+    "avg_hours_per_task": 6.0,
+    "cost_per_hour": 8.08,
+    "revenue_generated": 0.0,
+    "roi_percentage": 0.0
+  }
+]
