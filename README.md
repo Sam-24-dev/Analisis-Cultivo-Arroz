@@ -12,10 +12,6 @@
 <a href="https://sam-24-dev.github.io/Analisis-Cultivo-Arroz/">
   <img src="https://img.shields.io/badge/View_Live_Demo-Dashboard-2EA44F?style=for-the-badge&logo=google-chrome&logoColor=white" />
 </a>
-&nbsp;
-<a href="https://github.com/Sam-24-dev/Analisis-Cultivo-Arroz">
-  <img src="https://img.shields.io/badge/GitHub-View_Code-181717?style=for-the-badge&logo=github&logoColor=white" />
-</a>
 
 </div>
 
