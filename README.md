@@ -27,7 +27,7 @@ A data-driven solution for rice crop management that transforms agricultural dat
 | Lack of data visibility | Interactive dashboard | Real-time KPI monitoring |
 | Manual reporting | Automated ETL process | Time savings & accuracy |
 
-> **Core Value:** This project demonstrates a complete **Data Engineering workflow** — from database design to ETL automation to frontend visualization — solving a real agricultural business problem.
+> **Core Value:** This platform bridges the gap between agricultural operations and business intelligence, providing a scalable architecture to digitize field data and optimize financial decision-making.
 
 ---
 
@@ -138,6 +138,12 @@ Analisis-Cultivo-Arroz/
 │   └── data/                 # JSON files (ETL output)
 ├── README.md
 └── LICENSE
+
+## 🔮 Scalability & Future Roadmap
+To handle larger datasets (e.g., multiple farms), the architecture is designed to scale:
+- **Database:** Migration path to PostgreSQL/Snowflake for high-volume warehousing.
+- **Orchestration:** ETL script structure is compatible with **Airflow** for scheduled runs.
+- **Containerization:** Ready for **Docker** deployment to standardize the environment.
 ```
 
 ---
