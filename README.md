@@ -138,16 +138,16 @@ Analisis-Cultivo-Arroz/
 │   └── data/                 # JSON files (ETL output)
 ├── README.md
 └── LICENSE
-
+```
+---
 ## 🔮 Scalability & Future Roadmap
 To handle larger datasets (e.g., multiple farms), the architecture is designed to scale:
 - **Database:** Migration path to PostgreSQL/Snowflake for high-volume warehousing.
 - **Orchestration:** ETL script structure is compatible with **Airflow** for scheduled runs.
 - **Containerization:** Ready for **Docker** deployment to standardize the environment.
-```
-
 ---
 
+---
 <div align="center">
 
 ### Author
