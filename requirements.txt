@@ -1,2 +1,11 @@
-# No external dependencies required.
-# The ETL pipeline uses Python standard libraries: json, csv, pathlib, datetime.
+# Rice Crop Analytics Platform - Dependencies
+
+# Core (standard library only for ETL)
+# json, csv, pathlib, datetime are built-in
+
+# Testing
+pytest>=7.0.0
+
+# Optional - for extended analysis
+# pandas>=2.0.0
+# plotly>=5.0.0

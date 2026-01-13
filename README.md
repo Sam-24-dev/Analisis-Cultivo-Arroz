@@ -19,37 +19,36 @@
 
 ## Project Overview
 
-A data-driven solution for rice crop management that transforms agricultural data into actionable business insights.
+End-to-end data engineering solution for agricultural operations that transforms raw field data into actionable business intelligence.
 
 | Challenge | Solution | Impact |
 |-----------|----------|--------|
-| Negative ROI (-5.58%) | End-to-end data pipeline | Strategic plan to reach +15% ROI |
+| Negative ROI (-5.58%) | Automated ETL pipeline | Strategic plan to reach +15% ROI |
 | Lack of data visibility | Interactive dashboard | Real-time KPI monitoring |
-| Manual reporting | Automated ETL process | Time savings & accuracy |
+| Manual reporting | Python data processing | Time savings & accuracy |
 
-> **Core Value:** This platform bridges the gap between agricultural operations and business intelligence, providing a scalable architecture to digitize field data and optimize financial decision-making.
+> **Core Value:** This platform bridges the gap between agricultural operations and business intelligence, providing a production-ready architecture to digitize field data and optimize financial decision-making.
 
 ---
 
 ## Pipeline Architecture
 
-This project implements an **automated data pipeline** where Python processes source data and generates JSON outputs for the web dashboard:
+This project implements an **automated ETL pipeline** that processes source data and generates JSON outputs for web consumption:
 
 ```
 ┌─────────────┐     ┌─────────────┐     ┌─────────────┐     ┌─────────────┐
 │   MySQL     │────▶│   Python    │────▶│    JSON     │────▶│    Web      │
-│  Database   │     │    ETL      │     │   Files     │     │  Dashboard  │
+│  Database   │     │    ETL      │     │   Output    │     │  Dashboard  │
 └─────────────┘     └─────────────┘     └─────────────┘     └─────────────┘
-     Schema          extract_transform.py     data/          Chart.js
-     Queries                                 7 files         5 pages
+     Schema         extract_transform.py    7 files         5 pages
 ```
 
-| Component | Output |
-|-----------|--------|
-| MySQL Schema | Tables, triggers, stored procedures |
-| Python ETL | Processes CSVs, calculates KPIs |
-| JSON Export | 7 data files in `web/data/` |
-| Web Dashboard | 5 interactive pages with Chart.js |
+| Layer | Component | Output |
+|-------|-----------|--------|
+| **Source** | MySQL Schema | Tables, triggers, stored procedures |
+| **Processing** | Python ETL | Extracts CSVs, calculates KPIs |
+| **Storage** | JSON Export | 7 data files in `web/data/` |
+| **Presentation** | Web Dashboard | 5 interactive pages with Chart.js |
 
 ---
 
@@ -84,31 +83,35 @@ The web dashboard provides comprehensive analytics across 5 specialized views:
 |-------|--------------|
 | **Database** | MySQL 8.0, Stored Procedures, Triggers, Views |
 | **ETL Pipeline** | Python 3, JSON, Standard Libraries |
-| **Analysis** | Pandas, Plotly, Jupyter Notebook |
+| **Testing** | pytest |
 | **Frontend** | HTML5, CSS3, JavaScript (ES6+), Bootstrap 5 |
 | **Visualization** | Chart.js |
 | **Deployment** | GitHub Pages |
 
 ---
 
-## How to Run
+## Quick Start
 
-### 1. Run ETL Pipeline
 ```bash
+# Clone repository
+git clone https://github.com/Sam-24-dev/Analisis-Cultivo-Arroz.git
 cd Analisis-Cultivo-Arroz
+
+# Install dependencies
+pip install -r requirements.txt
+
+# Run ETL pipeline
 python etl/extract_transform.py
+
+# Run tests
+python -m pytest tests/ -v
+
+# Start local server
+cd web && python -m http.server 8000
 ```
 
-### 2. Launch Dashboard
-```bash
-cd web
-python -m http.server 8000
-# Open http://localhost:8000
-```
-
-### 3. Database Setup (Optional)
+For MySQL setup (optional):
 ```sql
--- MySQL
 SOURCE database/schema.sql;
 SOURCE database/queries.sql;
 ```
@@ -119,34 +122,49 @@ SOURCE database/queries.sql;
 
 ```
 Analisis-Cultivo-Arroz/
-├── database/                 # Data Engineering Core
+├── config/                   # Configuration
+│   └── settings.py           # ETL settings and constants
+├── data/
+│   ├── raw/                  # Source CSV files (10 files)
+│   └── processed/            # Cleaned JSON data (7 files)
+├── database/
 │   ├── schema.sql            # Database schema
 │   └── queries.sql           # Analytical queries
-├── etl/                      # ETL Pipeline
-│   └── extract_transform.py  # Python ETL script
-├── data/                     # Data Storage
-│   ├── raw/                  # Source CSV files
-│   └── processed/            # Cleaned data
-├── web/                      # Frontend Dashboard
+├── docs/
+│   └── architecture.md       # Technical documentation
+├── etl/
+│   └── extract_transform.py  # Main ETL script (15 functions)
+├── tests/
+│   └── test_etl.py           # Unit tests (14 tests)
+├── web/
+│   ├── css/                  # Styles
+│   ├── js/                   # Application logic (6 modules)
+│   ├── data/                 # JSON files (ETL output)
 │   ├── index.html            # Main Dashboard
 │   ├── employees.html        # Productivity Analysis
 │   ├── financial.html        # Financial Analysis
 │   ├── areas.html            # Area Performance
-│   ├── insights.html         # Strategic Insights
-│   ├── css/                  # Styles
-│   ├── js/                   # Application Logic
-│   └── data/                 # JSON files (ETL output)
+│   └── insights.html         # Strategic Insights
+├── .env.example              # Environment template
+├── .gitignore
+├── LICENSE
+├── Makefile                  # Automation commands
 ├── README.md
-└── LICENSE
+└── requirements.txt
 ```
----
-## 🔮 Scalability & Future Roadmap
-To handle larger datasets (e.g., multiple farms), the architecture is designed to scale:
-- **Database:** Migration path to PostgreSQL/Snowflake for high-volume warehousing.
-- **Orchestration:** ETL script structure is compatible with **Airflow** for scheduled runs.
-- **Containerization:** Ready for **Docker** deployment to standardize the environment.
+
 ---
 
+## Scalability & Roadmap
+
+The architecture is designed to scale for production workloads:
+
+- **Database:** Migration path to PostgreSQL/Snowflake for high-volume warehousing
+- **Orchestration:** ETL structure is compatible with Apache Airflow for scheduled runs
+- **Containerization:** Ready for Docker deployment to standardize environment
+- **API Layer:** FastAPI integration for programmatic data access
+
+---
 
 <div align="center">
 
@@ -155,7 +173,7 @@ To handle larger datasets (e.g., multiple farms), the architecture is designed t
 **Samir Caizapasto**  
 *Junior Data Engineer & Analyst*
 
-[![](https://img.shields.io/badge/LinkedIn-Connect-0077B5?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/samir-caizapasto/)
+[![](https://img.shields.io/badge/LinkedIn-Connect-0077B5?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/samircaizapasto/)
 [![](https://img.shields.io/badge/Portfolio-Visit-00d4ff?style=for-the-badge&logo=vercel)](https://portafolio-samir-tau.vercel.app/)
 [![](https://img.shields.io/badge/GitHub-Follow-181717?style=for-the-badge&logo=github)](https://github.com/Sam-24-dev)
 
