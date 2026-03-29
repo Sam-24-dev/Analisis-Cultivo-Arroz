@@ -2,15 +2,16 @@
 
 <div align="center">
 
-![Data Engineer](https://img.shields.io/badge/Role-Data_Engineer-orange?style=for-the-badge&logo=apache-spark&logoColor=white)
-![Data Analyst](https://img.shields.io/badge/Role-Data_Analyst-blue?style=for-the-badge&logo=google-analytics&logoColor=white)
-![Status](https://img.shields.io/badge/Status-Completed-success?style=for-the-badge)
-![Pipeline](https://img.shields.io/badge/Pipeline-ETL_Automated-blueviolet?style=for-the-badge)
+![Python](https://img.shields.io/badge/Python-ETL-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![MySQL](https://img.shields.io/badge/MySQL-Schema-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
+![ETL](https://img.shields.io/badge/ETL-JSON_Output-success?style=for-the-badge)
+![Dashboard](https://img.shields.io/badge/Dashboard-5_Views-0A66C2?style=for-the-badge)
+![License](https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge)
 
 <br>
 
 <a href="https://sam-24-dev.github.io/Analisis-Cultivo-Arroz/">
-  <img src="https://img.shields.io/badge/View_Live_Demo-Dashboard-2EA44F?style=for-the-badge&logo=google-chrome&logoColor=white" />
+  <img src="https://img.shields.io/badge/Live_Demo-View_Dashboard-0078D4?style=for-the-badge&logo=github&logoColor=white" alt="Live Demo" />
 </a>
 
 </div>
@@ -19,98 +20,105 @@
 
 ## Project Overview
 
-End-to-end data engineering solution for agricultural operations that transforms raw field data into actionable business intelligence.
+This repository contains a portfolio-ready agricultural analytics project that connects database design, Python ETL, and dashboard delivery into one operational workflow. The goal is to move from fragmented field and finance exports to a clearer view of ROI recovery, productivity, efficiency, and area-level performance.
+
+The project combines:
+- MySQL schema and analytical query design
+- Python ETL that converts raw exports into dashboard-ready JSON
+- a browser-based dashboard with five views for operational review
+- KPI storytelling focused on profitability recovery and planning
+
+---
+
+## Challenge / Solution / Impact
 
 | Challenge | Solution | Impact |
-|-----------|----------|--------|
-| Negative ROI (-5.58%) | Automated ETL pipeline | Strategic plan to reach +15% ROI |
-| Lack of data visibility | Interactive dashboard | Real-time KPI monitoring |
-| Manual reporting | Python data processing | Time savings & accuracy |
+|---|---|---|
+| Negative ROI and limited operational visibility made profitability hard to diagnose | Built a MySQL -> Python ETL -> JSON -> web dashboard workflow | Clear recovery path from `-5.58%` ROI to a `+15%` target |
+| KPI signals were spread across multiple raw exports | Consolidated source files into reusable JSON outputs for dashboard consumption | Faster monitoring of finance, productivity, and area performance |
+| Manual reporting slowed decision-making for the agricultural operation | Delivered a five-view web dashboard for executive and operational review | More consistent analysis across employees, finance, areas, and strategic insights |
 
-> **Core Value:** This platform bridges the gap between agricultural operations and business intelligence, providing a production-ready architecture to digitize field data and optimize financial decision-making.
+---
+
+## Key Metrics
+
+| Metric | Current | Target | Improvement |
+|---|---:|---:|---:|
+| ROI | -5.58% | +15.00% | +20.6 pts |
+| Efficiency | 72.7% | 90.0% | +17.3 pts |
+| Productivity | 28.5 units | 50.0 units | +75% |
+| Quality | 100% first class | 100% | Maintained |
 
 ---
 
 ## Pipeline Architecture
 
-This project implements an **automated ETL pipeline** that processes source data and generates JSON outputs for web consumption:
-
+```text
+MySQL schema + analytical exports
+        ->
+Python ETL (etl/extract_transform.py)
+        ->
+JSON outputs in data/processed and web/data
+        ->
+Web dashboard with 5 analytical views
 ```
-┌─────────────┐     ┌─────────────┐     ┌─────────────┐     ┌─────────────┐
-│   MySQL     │────▶│   Python    │────▶│    JSON     │────▶│    Web      │
-│  Database   │     │    ETL      │     │   Output    │     │  Dashboard  │
-└─────────────┘     └─────────────┘     └─────────────┘     └─────────────┘
-     Schema         extract_transform.py    7 files         5 pages
-```
 
-| Layer | Component | Output |
-|-------|-----------|--------|
-| **Source** | MySQL Schema | Tables, triggers, stored procedures |
-| **Processing** | Python ETL | Extracts CSVs, calculates KPIs |
-| **Storage** | JSON Export | 7 data files in `web/data/` |
-| **Presentation** | Web Dashboard | 5 interactive pages with Chart.js |
+| Layer | Technologies | Output |
+|---|---|---|
+| Data source | MySQL schema, SQL queries, CSV exports | Raw operational and financial inputs |
+| Transformation | Python ETL | Cleaned, aggregated, and dashboard-ready JSON |
+| Delivery | HTML, CSS, JavaScript, Bootstrap, Chart.js | Five dashboard pages for browser review |
 
 ---
 
-## Key Metrics & Results
-
-| Metric | Current | Target | Improvement |
-|--------|---------|--------|-------------|
-| **ROI** | -5.58% | +15% | +20.6 pts |
-| **Efficiency** | 72.7% | 90% | +17.3 pts |
-| **Productivity** | 28.5 units | 50 units | +75% |
-| **Quality** | 100% First Class | 100% | Maintained |
-
----
-
-## Dashboard Features
-
-The web dashboard provides comprehensive analytics across 5 specialized views:
+## Dashboard Scope
 
 | Page | Purpose |
-|------|---------|
-| **Dashboard** | Executive KPIs, investment charts, task status |
-| **Employees** | Productivity rankings, efficiency metrics, ROI by worker |
-| **Financial** | Cost breakdown, ROI by activity, budget variance |
-| **Areas** | Geographic performance, soil type analysis |
-| **Insights** | AI recommendations, trend analysis, action plans |
+|---|---|
+| Dashboard | Executive KPIs, investment view, and task-level status |
+| Employees | Productivity rankings, worker efficiency, and ROI by employee |
+| Financial | Cost structure, ROI by activity, and budget tracking |
+| Areas | Geographic performance and soil-type context |
+| Insights | Trends, recommendations, and action-oriented summary |
 
 ---
 
 ## Tech Stack
 
 | Layer | Technologies |
-|-------|--------------|
-| **Database** | MySQL 8.0, Stored Procedures, Triggers, Views |
-| **ETL Pipeline** | Python 3, JSON, Standard Libraries |
-| **Testing** | pytest |
-| **Frontend** | HTML5, CSS3, JavaScript (ES6+), Bootstrap 5 |
-| **Visualization** | Chart.js |
-| **Deployment** | GitHub Pages |
+|---|---|
+| Database | MySQL 8.0, stored procedures, triggers, views |
+| ETL | Python 3, JSON, standard libraries |
+| Testing | pytest |
+| Frontend | HTML5, CSS3, JavaScript, Bootstrap 5 |
+| Visualization | Chart.js |
+| Hosting | GitHub Pages |
 
 ---
 
 ## Quick Start
 
 ```bash
-# Clone repository
+# clone repository
 git clone https://github.com/Sam-24-dev/Analisis-Cultivo-Arroz.git
 cd Analisis-Cultivo-Arroz
 
-# Install dependencies
+# install dependencies
 pip install -r requirements.txt
 
-# Run ETL pipeline
+# run ETL pipeline
 python etl/extract_transform.py
 
-# Run tests
+# run tests
 python -m pytest tests/ -v
 
-# Start local server
-cd web && python -m http.server 8000
+# serve dashboard locally
+cd web
+python -m http.server 8000
 ```
 
-For MySQL setup (optional):
+Optional MySQL setup:
+
 ```sql
 SOURCE database/schema.sql;
 SOURCE database/queries.sql;
@@ -120,49 +128,30 @@ SOURCE database/queries.sql;
 
 ## Project Structure
 
-```
+```text
 Analisis-Cultivo-Arroz/
-├── config/                   # Configuration
-│   └── settings.py           # ETL settings and constants
-├── data/
-│   ├── raw/                  # Source CSV files (10 files)
-│   └── processed/            # Cleaned JSON data (7 files)
-├── database/
-│   ├── schema.sql            # Database schema
-│   └── queries.sql           # Analytical queries
-├── docs/
-│   └── architecture.md       # Technical documentation
-├── etl/
-│   └── extract_transform.py  # Main ETL script (15 functions)
-├── tests/
-│   └── test_etl.py           # Unit tests (14 tests)
-├── web/
-│   ├── css/                  # Styles
-│   ├── js/                   # Application logic (6 modules)
-│   ├── data/                 # JSON files (ETL output)
-│   ├── index.html            # Main Dashboard
-│   ├── employees.html        # Productivity Analysis
-│   ├── financial.html        # Financial Analysis
-│   ├── areas.html            # Area Performance
-│   └── insights.html         # Strategic Insights
-├── .env.example              # Environment template
-├── .gitignore
-├── LICENSE
-├── Makefile                  # Automation commands
-├── README.md
-└── requirements.txt
+|- config/                 # ETL settings and shared constants
+|- data/
+|  |- raw/                 # Source exports used by the pipeline
+|  `- processed/           # ETL outputs and dashboard-ready JSON backups
+|- database/               # Schema and analytical SQL
+|- docs/                   # Technical documentation
+|- etl/                    # Main ETL script
+|- tests/                  # Automated ETL validation
+|- web/                    # Dashboard pages, JS modules, and production JSON
+|- .env.example
+|- Makefile
+|- requirements.txt
+`- README.md
 ```
 
 ---
 
-## Scalability & Roadmap
+## Documentation
 
-The architecture is designed to scale for production workloads:
-
-- **Database:** Migration path to PostgreSQL/Snowflake for high-volume warehousing
-- **Orchestration:** ETL structure is compatible with Apache Airflow for scheduled runs
-- **Containerization:** Ready for Docker deployment to standardize environment
-- **API Layer:** FastAPI integration for programmatic data access
+- Technical architecture: [docs/architecture.md](./docs/architecture.md)
+- Main ETL entrypoint: [etl/extract_transform.py](./etl/extract_transform.py)
+- Dashboard entrypoint: [web/index.html](./web/index.html)
 
 ---
 
@@ -173,16 +162,12 @@ The architecture is designed to scale for production workloads:
 **Samir Caizapasto**  
 *Junior Data Engineer & Analyst*
 
-[![](https://img.shields.io/badge/LinkedIn-Connect-0077B5?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/samir-caizapasto/)
-[![](https://img.shields.io/badge/Portfolio-Visit-00d4ff?style=for-the-badge&logo=vercel)](https://portafolio-samir-tau.vercel.app/)
-[![](https://img.shields.io/badge/GitHub-Follow-181717?style=for-the-badge&logo=github)](https://github.com/Sam-24-dev)
+[![Visit portfolio website](https://img.shields.io/badge/Portfolio-Visit_Website-success?style=for-the-badge&logo=vercel&logoColor=white)](https://portafolio-samir-tau.vercel.app/)
+[![Connect on LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/samir-caizapasto/)
+[![Contact by email](https://img.shields.io/badge/Email-Contact-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:samir.leonardo.caizapasto04@gmail.com)
 
 </div>
 
 ---
 
-<div align="center">
-
-⭐ If this project demonstrates useful data engineering practices, please give it a star.
-
-</div>
+If this project was useful or interesting, consider starring the repository.
